@@ -21,6 +21,8 @@ https://maven.pkg.github.com/Mooneze/maven-repo
 
 GitHub Packages 的 Maven 仓库不接受大写 artifactId，所以 `HelloNBT` 和 `HMCLauncher` 发布了小写版本，坐标也相应改成小写。
 
+仓库是 public，但 GitHub Packages 的 Maven/NuGet **读取仍然需要 token**；匿名请求返回 401。token 需要 `read:packages` / `write:packages`（`write:packages` 已包含读取权限）。
+
 ## NuGet
 
 源地址：
